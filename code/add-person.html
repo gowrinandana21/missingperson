@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Missing Person</title>
+    <link rel="stylesheet" href="add-person.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Add Missing Person</h2>
+        <form id="addPersonForm" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="missingDate">Missing Date:</label>
+            <input type="date" id="missingDate" name="missingDate" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <label for="contact">Contact Number (If Found):</label>
+            <input type="tel" id="contact" name="contact" required>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message"></p>
+    </div>
+
+    <script src="add-person.js"></script>
+</body>
+</html>
